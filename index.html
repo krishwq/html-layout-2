@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>REGISTRATION FORM</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script>
+        function internal() {
+            alert("This is the button of submit")
+        }
+        function message() {
+            alert("You are sure to contact!!")
+        }
+    </script>
+    <style>
+        td {
+            padding: 4px 8px;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=cheekbox],
+        textarea,
+        input[type=number],
+        input[type=email],
+        select,
+        input[type=password],
+        input[type=file] {
+            border-color: blue;
+            border-radius: 8px;
+            padding: 5px 30px;
+            border-style: inset;
+            margin: 5;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: blue;
+            color: antiquewhite;
+            border-radius: 5px;
+            border-color: blue;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.7
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            background-image: url(/images/Screenshot\ \(34\).png);
+            background-size: contain;
+        }
+
+        #krish {
+            background-color: yellow;
+            color: red;
+            border-radius: 5px;
+            border: 3px solid blue;
+            text-align: center;
+            width: 600px;
+            padding: 4px 30px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .kb {
+            background-color: rgb(8, 8, 91);
+            color: aliceblue;
+            padding-left: 1%;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color: rgb(22, 22, 143);">
+        REGISTRATION FORM</h1>
+    <form>
+        <table border="2px" align="center" style="border-color: rgb(75, 106, 218); border-radius: 8px;color: brown;">
+            <tr style="background-color: aqua;">
+                <td>1</td>
+                <td>
+                    <lebel>Name*:</lebel>&nbsp;<input type="text" name="name" placeholder="first name"
+                        required>&nbsp;<input type="text" placeholder="middle name">&nbsp;<input type="text"
+                        placeholder="last name" required>
+                </td>
+            </tr>
+            <tr style="background-color:gray;">
+                <td>2</td>
+                <td>
+                    <lebel>Father name*:</lebel>&nbsp; <input type="text" name="name" placeholder="first name"
+                        required>&nbsp;<input type="text" placeholder="middle name">&nbsp;<input type="text"
+                        placeholder="last name" required>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td> 3</td>
+                <td>
+                    <lebel>mother Name*:</lebel>&nbsp; <input type="text" name="name" placeholder="first name"
+                        required>&nbsp;<input type="text" placeholder="middle name">&nbsp;<input type="text"
+                        placeholder="last name" required>
+                </td>
+            </tr>
+            <tr style="background-color:gray;">
+                <td>4</td>
+                <td>
+                    <lebel>address type*:</lebel><br><input type="checkbox" name="address"
+                        style="cursor: pointer;">Permanet &nbsp;<input type="checkbox" name="address"
+                        style="cursor: pointer;">Temporary
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>5</td>
+                <td>
+                    <lebel>address*:</lebel>&nbsp;<input type="text" placeholder="address line 1" required><span
+                        style="padding: 120px;"></span><input type="text" placeholder="address line 2">
+                </td>
+            </tr>
+            <tr style="background-color:gray;">
+                <td>6</td>
+                <td>
+                    <lebel>Locality*:</lebel>&nbsp;<input type="text" placeholder="locality" required list="1">
+                    <datalist id="1">
+                        <option>Barasat</option>
+                        <option>Madyamgram</option>
+                        <option>Barrakpore</option>
+                        <option>Basirhat</option>
+                        <option>Kolkata</option>
+                        <option>New town</option>
+                        <option>Kazipara</option>
+                        <option>Dum Dum</option>
+                        <option>Birati</option>
+                        <option>Ultodanga</option>
+                        <option>Majerhat</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>7</td>
+                <td>
+                    <lebel>street Name*:</lebel>&nbsp;<input type="text" placeholder="street name" required>
+                </td>
+            </tr>
+            <tr style="background-color:gray;">
+                <td>8</td>
+                <td>
+                    <lebel>pin Code*:</lebel>&nbsp;<input type="text" placeholder="pin code" required>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>9</td>
+                <td>Date Of Birth*:</lebel>&nbsp;<input type="date" placeholder="DOB" required> </td>
+            </tr>
+            <tr style="background-color:gray;">
+                <td>10</td>
+                <td>
+                    <lebel>Place of Birth*:</lebel>&nbsp;<input type="text" placeholder="POB" required>
+                </td>
+            </tr>
+            <tr style="background-color:aqua;">
+                <td>11</td>
+                <td>
+                    <lebel>Description:</lebel><br>
+                    <textarea rows="3" cols="80">
+                        Enter Description Here
+                    </textarea>
+                </td>
+            </tr>
+            <tr style="background-color: gray">
+                <td>12</td>
+                <td>
+                    <lebel>Mobile No.*:</lebel>&nbsp;<input type="number" placeholder="Mobile No." required>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>13</td>
+                <td>
+                    <lebel>email-id*:</lebel>&nbsp;<input type="email" placeholder="email-id" required>
+                </td>
+            </tr>
+            <tr style="background-color: gray">
+                <td>14</td>
+                <td>
+                    <lebel>Additional mobile no.*:</lebel>&nbsp;<input type="number" placeholder="Additional mobile no."
+                        required>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>15</td>
+                <td>
+                    <lebel>additional email-id.:</lebel>&nbsp;<input type="email" placeholder="additional email-id.">
+                </td>
+            </tr>
+            <tr style="background-color: gray;">
+                <td>16</td>
+                <td>
+                    <lebel>Course*:</lebel>&nbsp;
+                    <select required>
+                        <option value="">course</option>
+                        <option value="BBA">BBA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Law">Law</option>
+                        <option value="Management">Management</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>17</td>
+                <td><label>Branch*:</label>&nbsp;
+                    <select required>
+                        <option value="">branch</option>
+                        <optgroup label="Tire 1">
+                            <option value="Computer science and technology">Computer science and technology</option>
+                            <option value="Informational technology">Informational technology</option>
+                            <option value="Artificial inteligence">Artificial inteligence</option>
+                        </optgroup>
+                        <optgroup label="Tire 2">
+                            <option value="Mathematical & computing">Mathematical & computing</option>
+                            <option value="Electronics and communication">Electronics and communication</option>
+                            <option value="Electrical engeneering">Electrical engeneering</option>
+                        </optgroup>
+                        <optgroup label="Tire 3">
+                            <option value="Mechanical engeneering">Mechanical engeneering</option>
+                            <option value="Civil engeneering">Civil engeneering</option>
+                            <option value="Metallurgy engeneering">Metallurgy engeneering</option>
+                            <option value="Mining engeneering">Mining engeneering</option>
+                            <option value="Aerospace engeneering">Aerospace engeneering</option>
+                            <option value="Ocan engeneering">Ocan engeneering</option>
+                        </optgroup>
+                        <optgroup label="Basic science">
+                            <option value="engeneering physica">engeneering physica</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr style="background-color: gray;">
+                <td>18</td>
+                <td>
+                    <lebel>Respective Boards*:</lebel>&nbsp;
+                    <select required>
+                        <option value="">Boards</option>
+                        <option value="WBCHSE">WBCHSE</option>
+                        <option value="CBSC">CBSC</option>
+                        <option value="ICSC">ICSC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>19</td>
+                <td>
+                    <lebel>passwod*:</lebel>&nbsp;<input type="password" placeholder="enter password" maxlength="8"
+                        required>
+                </td>
+            </tr>
+            <tr style="background-color: grey;">
+                <td>20</td>
+                <td>
+                    <lebel>Re enter password*:</lebel>&nbsp;<input type="password" placeholder="re enter password"
+                        maxlength="8" required>
+                </td>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>21</td>
+                <td>
+                    <lebel>photo*:</lebel>&nbsp;<input type="file" required>[100kb-200kb/jpg]
+                </td>
+            </tr>
+            <tr style="background-color: gray;">
+                <td>22</td>
+                <td>
+                    <lebel>signeture*:</lebel>&nbsp;<input type="file" required>[50kb-100kb/pdf]
+                </td>
+            </tr>
+        </table>
+        <p style="text-align: center;">
+            <button onclick="internal()">SUBMIT</button>
+        </p>
+    </form>
+    <br>
+    <div id="krish">
+        NOTE:ALL * MARKED ARE REQURED<br>
+    </div><br><br>
+    <br>
+
+    <div style="width: 100%;height: 350px;">
+        <div style=" float: left;background-color: rgb(3, 3, 53);width: 60%;height: 350px; color: aliceblue;">
+            <div style="text-align: left; padding-left: 20px;padding-top: 10px;">
+                <p>COUNCELLING WEBSITE<br>
+                    <a href="http://www.josaa.nic.in" style="color: aliceblue;">JOSAA</a>
+                </p>
+                <h5>Qualifying exam</h5>
+                <ul type="circle">
+                    <li><a href="http://www.jeemain.nta.nic.in" style="color: aliceblue;"><em
+                                title="http://www.jeemain.nta.nic.in">JEE MAIN</em></a></li>
+                    <li><a href="http://www.jeeadv.ac.in" style="color: aliceblue;"><em
+                                title="http://www.jeeadv.ac.in">JEE ADVANCE</em></a></li>
+                </ul>
+                <br><br>
+                CONTACT DETAILS:
+                <address>Saltlake,Sector-V,<br>Kol-700001<br>Kolkata<br>West Bengal,India</address>
+            </div>
+        </div>
+        <div style="background-color: rgb(3, 3, 53);width: 40%;height: 350px;color: aliceblue;float: right;">
+            <div style="text-align: right;padding-right: 20px;padding-top: 20px;">
+                Phone-6290671032 / 8420816018 <br>
+                Mailing addraess-<br>
+                birkrishnendu@gmail.com<br>
+                tapasbir987@gmail.com
+                <br><br>
+                <a href="mailto:birkrishnendu@gmail.com" onclick="message()" style="color: aliceblue;">CONTACT US
+                    1</a><br><br>
+                <a href="mailto:tapasbir987@gmail.com" onclick="message()" style="color: aliceblue;"> CONTACT US 2</a>
+            </div>
+        </div>
+    </div>
+    <h4 style="text-align: center;">Extarnal Link:- <br><br> link of top 20 government college website:-</h4>
+    <form>
+        <lebel>College Owner:</lebel>
+        <select required>
+            <option value="">College Owner</option>
+            <option value="Public/Government">Public/Government</option>
+            <option value="Private">Private</option>
+        </select>
+        <br><br>
+        <label>College type:</label>
+        <select required>
+            <option value="">College type</option>
+            <option value="Indian Institute of Technology">Indian Institute of Technology</option>
+            <option value="National Institute of technology">National Institute of technology</option>
+            <option value="Indian Institute of Informational Technology">Indian Institute of Informational Technology
+            </option>
+            <option value="Government funded technical istitute of technology">Government funded technical istitute of
+                technology</option>
+        </select>
+        <br><br>
+        <lebel>College name:</lebel>
+        <select required>
+            <option value="">College name</option>
+            <option value="Indian Institute of Technology Bombay">Indian Institute of Technology Bombay</option>
+            <option value="Indian Institute of Technology delhi">Indian Institute of Technology delhi</option>
+            <option value="Indian Institute of Technology Kanpur">Indian Institute of Technology Kanpur</option>
+            <option value="Indian Institute of Technology Khragpur">Indian Institute of Technology Khragpur</option>
+            <option value="Indian Institute of Technology Roorki">Indian Institute of Technology Roorki</option>
+            <option value="Indian Institute of Technology Gwahati">Indian Institute of Technology Gwahati</option>
+            <option value="Indian Institute of Technology Hyderabad">Indian Institute of Technology Hyderabad</option>
+            <option value="Indian Institute of Technology Indore">Indian Institute of Technology Indore</option>
+            <option value="Indian Institute of Technology BHU(Varanasi)">Indian Institute of Technology BHU(Varanasi)
+            </option>
+            <option value="Indian Institute of Technology Gandinagar">Indian Institute of Technology Gandinagar</option>
+            <option value="Indian Institute of Technology Mandi">Indian Institute of Technology Mandi</option>
+            <option value="Indian Institute of Technology Bhubaneswar">Indian Institute of Technology Bhubaneswar
+            </option>
+            <option value="Indian Institute of Technology Palakand">Indian Institute of Technology Palakand</option>
+            <option value="Indian Institute of Technology Patna">Indian Institute of Technology Patna</option>
+            <option value="Indian Institute of Technology Jammu">Indian Institute of Technology Jammu</option>
+            <option value="Indian Institute of Technology Bhilai">Indian Institute of Technology Bhilai</option>
+        </select>
+        <br>
+        <p style="text-align: center;">
+            <button>SUBMIT</button>
+        </p>
+    </form>
+    <h3 style="text-align: center;"><span
+            style="background-color: rgb(213, 213, 41);color: rgb(209, 29, 41);border: 2px solid blue;border-radius: 30px;padding: 3px;"><b>-:TOP
+                20 GOVERNMENT ENGENEERING COLLEGE:-</b></span></h3><br>
+    <div style="width: 100%;height: 250px;">
+        <div style="width: 48.95%;float: left;border: 0.05% solid white;" class="kb">
+            <div></div>
+            <ol type="1">
+                <li>Indian Institute of Technology Madras</li>
+                <li>Indian Institute of Technology Bombay</li>
+                <li>Indian Institute of Technology Delhi</li>
+                <li>Indian Institute of Technology Kanpur</li>
+                <li>Indian Institute of Technology Kharagpur</li>
+                <li>Indian Institute of Technology Roorki</li>
+                <li>Indian Institute of Technology Gwahati</li>
+                <li>Indian Institute of Technology Hyderabad</li>
+                <li>National Institute of Technology Tiruchinapally</li>
+                <li>Jadavpur University</li>
+            </ol>
+        </div>
+        <div style="width: 49%;float: right;" class="kb">
+            <ol type="1" start="11">
+                <li>Indian Institute of Technology Indore</li>
+                <li>Indian Institute of Technology BHU(varanasi)</li>
+                <li>National Institute of Technology Raurkela</li>
+                <li>Motilal Neheru National Institute of Technology</li>
+                <li>Indian Institute of Technology Gandhinagar</li>
+                <li>Indian Institute of Technology Ropar</li>
+                <li>National Institute of Technology suratkal</li>
+                <li>National Institute of Technology Kalikat</li>
+                <li>National Institute of Technology warangal</li>
+                <li>Indian Institute of engeneering science and technology shibpur</li>
+            </ol>
+        </div>
+    </div>
+</body>
